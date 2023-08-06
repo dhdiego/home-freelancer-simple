@@ -1,0 +1,89 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+
+    --fuentePrincipal: 3.8rem;
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-size: 16px;
+    font-family:'Krub', sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+   
+
+
+    
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+    
+}
+
+.navegacion-principal {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+@media (min-width: 480px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+}
+
+.navegacion-principal a {
+  color: var(--blanco);  
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+}
+
