@@ -115,41 +115,49 @@
         </section>
     </div>
 
-    </main>
+ 
 
     <section>
         <h2>Contacto</h2>
     
-        <form action="">
+        <form class="formulario">
             <fieldset>
                 <legend>Contactame!</legend>
+
+                <div class="contenedor-campos">
     
-                <div>
+                <div class="campo">
                     <label for="">Nombre</label>
-                    <input type="text" placeholder="Nombre">
+                    <input class="input-text" type="text" placeholder="Nombre">
                 </div>
     
-                <div>
+                <div class="campo">
                     <label for="">Telefóno</label>
-                    <input type="tel" placeholder="Tu telefono">
+                    <input class="input-text" type="tel" placeholder="Tu telefono">
                 </div>
-                <div>
+                <div class="campo">
                     <label for="">Correo</label>
-                    <input type="email" placeholder="Tu Email">
+                    <input class="input-text" type="email" placeholder="Tu Email">
                 </div>
-                <div>
+            </div> <!-- CONTENEDOR DE LOS CAMPOS -->
+                <div class="campo">
                     <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="20" rows="10">Ingrese su mensaje</textarea>
-                    <input type="submit" value="Enviar">
+                    <textarea class="input-text" name="">Ingrese su mensaje</textarea>
+                    
+                    <div class="alinear-derecha">
+
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
+                </div>
                 </div>
             </fieldset>
     
     
         </form>
     </section>
+</main>
 
-    <footer>
-        <p>Todos Los derechos Reservados. Diego Díaz Freelancer.</p>
+    <footer class="footer">
+        <p>Todos Los derechos Reservados. <span>Diego Díaz Freelancer.</span> </p>
     </footer>
 
 
